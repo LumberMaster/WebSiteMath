@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block title %}Теория по стереометрии{% endblock %}
+{% block lenta %}
+  <div id="inner-lenta">
+    <p id="cube" class="Figure">
+    <h3>Куб</h3><br>
+    <div id="concept-figure-div" row="">
+    <img src="/static/Imgs/Cube.png" class="img-figure" id="img-figure-cube"> Куб — правильный многогранник, каждая грань которого представляет собой квадрат. Все ребра куба равны.<br><br> Куб является частным случаем параллелепипеда и призмы.</div><div id="formulas-figure"><h3 style="margin:5px 0px 8px 0px;">Формулы</h3>V = <a onmouseover="img_cube_a()" onmouseout="img_cube()">a</a><sup>3</sup><br>S = 6<a onmouseover="img_cube_a()" onmouseout="img_cube()">a</a><sup>2</sup></div></p>
+    
+    
+    
+    
+    <p id="Pyramid" class="Figure">
+    <h3>Пиромида</h3><br><div id="concept-figure-div"><img src="/static/Imgs/Pyramid.png" class="img-figure" id="img-figure-Pyramid"> Пирамида — многогранник, основание которого — многоугольник, а остальные грани — треугольники, имеющие общую вершину.<br><br>Пирамида является частным случаем конуса.<br><br> Пирамида называется правильной, если её основанием является правильный многоугольник, а вершина проецируется в центр основания.</div><div id="formulas-figure"><h3 style="margin:5px 0px 8px 0px;">Формулы</h3>V = 1/3S<sub style="font-size:10px;">осн.</sub> h</div></p>
+    
+    
+    
+    
+    <p id="Cone" class="Figure"><h3>Конус</h3><br><div id="concept-figure-div"><img src="/static/Imgs/Cone.png" class="img-figure" id="img-figure-Cone">Конус — тело, полученное объединением всех лучей, исходящих из одной точки (вершины конуса) и проходящих через плоскую поверхность.<br><br>Круглый конус может быть получен вращением прямоугольного треугольника вокруг одного из его катетов.</div><div id="formulas-figure"><h3 style="margin:5px 0px 8px 0px;">Формулы</h3>V = 1/3<a onmouseover="img_Cone_S()" onmouseout="img_Cone()">S<sub style="font-size:10px;">осн.</sub></a> <a onmouseover="img_Cone_H()" onmouseout="img_Cone()">h</a><br>S<sub style="font-size:10px;">бок. пов.</sub> = <a onmouseover="img_Cone_Pi()" onmouseout="img_Cone()">π</a><a onmouseover="img_Cone_R()" onmouseout="img_Cone()">R</a><a onmouseover="img_Cone_L()" onmouseout="img_Cone()">l</a><br>S<sub style="font-size:10px;">полн. пов.</sub> = <a onmouseover="img_Cone_Pi()" onmouseout="img_Cone()">π</a><a onmouseover="img_Cone_R()" onmouseout="img_Cone()">R</a>(<a onmouseover="img_Cone_L()" onmouseout="img_Cone()">l</a>+<a onmouseover="img_Cone_R()" onmouseout="img_Cone()">R</a>)</div></p>
+    
+    
+    
+    
+    <p id="Cylinder" class="Figure">
+    <h3>Цилиндр</h3><br>
+    
+    <div id="concept-figure-div"> <img src="/static/Imgs/Cylinder.png" class="img-figure" id="img-figure-Cylinder">Цилиндр — геометрическое тело, ограниченное цилиндрической поверхностью и двумя параллельными плоскостями, пересекающими её.
+    </div>
+    
+    <div id="formulas-figure">
+    <h3 style="margin:5px 0px 8px 0px;">Формулы</h3>
+    S<sub style="font-size:10px;">бок. пов.</sub> = 2<a onmouseover="img_Cylinder_Pi()" onmouseout="img_Cylinder()">π</a><a onmouseover="img_Cylinder_R()" onmouseout="img_Cylinder()">R</a><a onmouseover="img_Cylinder_H()" onmouseout="img_Cylinder()">h</a>
+    <br>
+    S<sub style="font-size:10px;">полн. пов.</sub> = 2<a onmouseover="img_Cylinder_Pi()" onmouseout="img_Cylinder()">π</a><a onmouseover="img_Cylinder_R()" onmouseout="img_Cylinder()">R</a>(<a onmouseover="img_Cylinder_H()" onmouseout="img_Cylinder()">h</a>+<a onmouseover="img_Cylinder_R()" onmouseout="img_Cylinder()">R</a>)
+    <br>
+    V = <a onmouseover="img_Cylinder_Pi()" onmouseout="img_Cylinder()">π</a><a onmouseover="img_Cylinder_R()" onmouseout="img_Cylinder()">R</a><sup>2</sup><a onmouseover="img_Cylinder_H()" onmouseout="img_Cylinder()">h</a>
+    </div>
+    </p>
+    
+    
+    
+    
+    <p id="Sphere" class="Figure">
+    <h3>Сфера</h3><br>
+    <div id="concept-figure-div"><img src="/static/Imgs/Sphere.png" class="img-figure" id="img-figure-Sphere">Сфера - геометрическое место точек в пространстве, равноудаленных от некоторой заданной точки (центра сферы).</div><div id="formulas-figure"><h3 style="margin:5px 0px 8px 0px;">Формулы</h3>S = 4<a onmouseover="img_Sphere_Pi()" onmouseout="img_Sphere()">π</a><a onmouseover="img_Sphere_R()" onmouseout="img_Sphere()">R</a><sup>2</sup><br>V = 4/3<a onmouseover="img_Sphere_Pi()" onmouseout="img_Sphere()">π</a><a onmouseover="img_Sphere_R()" onmouseout="img_Sphere()">R</a><sup>3</sup></div></p>
+    
+    <p id="Prism" class="Figure">
+    
+    <h3>Призма</h3><br>
+    
+    <div id="concept-figure-div"><img src="/static/Imgs/Prism3_right.png"  class="img-figure" id="img-figure-Prism">
+    Призма — это многогранная объемная фигура, которая состоит из двух одинаковых плоских многоугольников (основ), находящихся в двух параллельных плоскостях, а другие грани (боковые грани) - параллелограммы, что имеют общие стороны с этими многоугольниками.
+    </div>
+    
+    <div id="formulas-figure">
+    <h3 style="margin:5px 0px 8px 0px;">Формулы</h3>
+    V = <a onmouseover="img_Prism3_right_S()" onmouseout="img_Prism3_right()">S<sub style="font-size:10px;">осн.</sub></a><a onmouseover="img_Prism3_right_h()" onmouseout="img_Prism3_right()">h</a> 
+    <br>
+    Sb = P·h
+    </div>
+    
+    </p>
+    
+    </div>
+
+{% endblock %}

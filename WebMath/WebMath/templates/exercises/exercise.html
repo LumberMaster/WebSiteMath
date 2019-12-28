@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Задание{% endblock %}
+
+
+
+  {% block content %}
+  
+    {% if exercise %}
+      
+       {% for a in exercise %}
+          
+          <a href="#">{{a.text_exercis}}</a>
+          
+       {% endfor %}
+       
+    {% else %}
+      
+      Упражнений нету =(
+      
+    {% endif %}
+  
+  {% endblock %}

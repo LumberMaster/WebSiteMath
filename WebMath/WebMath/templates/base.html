@@ -1,0 +1,59 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<!--    <meta http-equiv="content-type" content="text/html; charset=windows-1251">-->
+    <meta charset="UTF-8">
+  <title>{% block title %}Главная{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'Styles.css' %}">
+    <script src="{% static 'Functions.js' %}" defer></script>
+    <script src="{% static 'Theory.js' %}" defer></script>
+</head>
+<body>
+    <div class="header">
+            <div class="inner-header">
+              <div id="header-wrapper">
+                <div class="sidebar">
+                
+                   <ol class="clear_margin ol-sidebar">
+<!--                       <li><img src="Img/Profile.png" alt="" class="img-sidebar"><a class="sidebar-buttons">Профиль</a></li>-->
+                       <li><mg src="{% static 'Imgs/Theory.png' %}" alt="" class="img-sidebar"><a class="sidebar-buttons" href="{%  url 'News' %}">Новости</a></li>
+                       <li><mg src="{% static 'Imgs/Theory.png' %}" alt="" class="img-sidebar"><a class="sidebar-buttons" href="{%  url 'TheoryMain' %}">Теория</a></li>
+<!--                       onclick="load_theory_main()"-->
+<!--                    <li><img src="" alt="" class="img-sidebar"><a class="sidebar-buttons"  onclick="load-main">Практика</a></li>-->
+<!--                       <li onclick="load_сalculator()"><img src="Img/Calculator.png" alt="" class="img-sidebar"><a class="sidebar-buttons">Калькулятор</a></li>-->
+<!--                       <li><img src="". alt="" class="img-sidebar"><a class="sidebar-buttons"  onclick="load-main"></a></li>-->
+
+                   </ol>
+                
+              </div>
+             </div>
+            </div>
+          </div>
+              
+  <div id="wrapper">                               
+            <div id="lenta">
+                <div id="inner-lenta"> 
+                  {% block lenta %}<h3>Страница не прогрузилась...</h3>{% endblock %}                                           
+                </div>
+            </div>          
+  </div>
+  
+  
+<!--
+ <div class="footer">
+            <div class="inner-footer"></div>
+ </div>
+-->
+ 
+<!-- <div id="up" onclick="page_up();">↑</div>-->
+    <div id="widgets"><img src="{% static 'Imgs/Calculator.png' %}" alt="" id="img-calculator" onclick="load_сalculator()"><img src="{% static 'Imgs/Paint-paper.png' %}" alt="" id="img-paint-paper"  onclick="load_paint_paper()"></div>
+
+
+
+{% block functions %}{% endblock %}
+
+</body>
+</html>
+
+
