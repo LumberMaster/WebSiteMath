@@ -44,11 +44,7 @@ body{
     color:white;
     font-size: 30px;
     margin: 0;
-<<<<<<< HEAD
-    background: url(/static/Imgs/background.jpg);
-=======
     background: #313131;
->>>>>>> f120ea0691cfde42e30fc8c1b3a530ed800cb9cf
     overflow-y:scroll;
 }
 h1{
