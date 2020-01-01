@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Теория{% endblock %}
+{% block lenta %}
+<div id="geometry" class="themes">
+  <h1>Геометрия</h1><br>
+    <a id="" class="Science_section" href="{% url 'Stereometry' %}">Стереометрия</a><br>
+ </div>
+ 
+ <div id="algebra" class="themes">
+  <h1>Алгебра</h1><br>
+    <a id="" class="Science_section" href="{% url 'Trigonometry' %}">Тригонометрия</a><br>
+    <a id="" class="Science_section" href="{% url 'Logarithms' %}">Логорифмы</a><br>
+    <a id="" class="Science_section" href="{% url 'Derivative' %}">Производная</a><br>
+ </div>
+
+{% endblock %}
