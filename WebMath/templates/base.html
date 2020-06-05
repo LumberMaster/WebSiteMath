@@ -6,37 +6,49 @@
     <meta charset="UTF-8">
   <title>{% block title %}Главная{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'Styles.css' %}">
-    <script src="{% static 'Functions.js' %}" defer></script>
-    <script src="{% static 'Theory.js' %}" defer></script>
+    <script src="{% static 'Functions.js' %}"></script>
+    <script src="{% static 'Theory.js' %}"></script>
 </head>
 <body>
+<!--
     <div class="header">
             <div class="inner-header">
-              <div id="header-wrapper">
-                <div class="sidebar">
-                
-                   <ol class="clear_margin ol-sidebar">
-<!--                       <li><img src="Img/Profile.png" alt="" class="img-sidebar"><a class="sidebar-buttons">Профиль</a></li>-->
-                       <li><mg src="{% static 'Imgs/Theory.png' %}" alt="" class="img-sidebar"><a class="sidebar-buttons" href="{%  url 'News' %}">Новости</a></li>
-                       <li><mg src="{% static 'Imgs/Theory.png' %}" alt="" class="img-sidebar"><a class="sidebar-buttons" href="{%  url 'TheoryMain' %}">Теория</a></li>
-<!--                       onclick="load_theory_main()"-->
-<!--                    <li><img src="" alt="" class="img-sidebar"><a class="sidebar-buttons"  onclick="load-main">Практика</a></li>-->
-<!--                       <li onclick="load_сalculator()"><img src="Img/Calculator.png" alt="" class="img-sidebar"><a class="sidebar-buttons">Калькулятор</a></li>-->
-<!--                       <li><img src="". alt="" class="img-sidebar"><a class="sidebar-buttons"  onclick="load-main"></a></li>-->
-
-                   </ol>
-                
-              </div>
-             </div>
+             <img src="/static/Imgs/Лого.png" style="margin-left:30px;margin-right: 60px; user-select: none; float: left;"> 
+                <div id="profile" style="float: right;width: 20%;height: 100px;padding-top: 20px;text-align: center;z-index: 100;">
+                   
+                    <a href="" class="link-registration" style="color:#cccccc;">Войти</a>
+                    <a href="" class="link-registration" style="color: #2a2828;background:#c46a2e;">Регистрация</a>
+                    
+                </div>
             </div>
           </div>
+-->
               
-  <div id="wrapper">                               
-            <div id="lenta">
-                <div id="inner-lenta"> 
-                  {% block lenta %}<h3>Страница не прогрузилась...</h3>{% endblock %}                                           
-                </div>
-            </div>          
+  <div id="wrapper">  
+            <script>PageFixing();</script>
+            <div id="header">
+                <img src="/static/Imgs/Лого.png" style="user-select: none; float: left; width: 10%"> 
+
+                <ol class="clear_margin ol-sidebar" style="float: left;padding-left: 10%; margin-top: 15px;font-family:"System";width: 70%;">
+                    <li><a class="sidebar-buttons" href="{%  url 'News' %}">Новости</a></li>
+                    <li><a class="sidebar-buttons" href="{%  url 'TheoryMain' %}">Теория</a></li>
+                    <li><a class="sidebar-buttons">Тренировка</a></li>
+                    <li><a class="sidebar-buttons">Полезное</a></li>
+                </ol>                                                      
+
+                <div id="profile" style="float: right;width: 20%;height: 100px;padding-top: 15px;text-align: center;z-index: 100;">       
+                    <a href="" class="link-registration" style="color:#cccccc;">Войти</a>
+                    <a href="" class="link-registration" style="color: #2a2828;background:#c46a2e;">Регистрация</a>            
+                </div>                                                                                                                                 
+            </div>
+            
+            <div id="content">                                                                                        
+                <div id="lenta">
+                    <div id="inner-lenta"> 
+                      {% block lenta %}<h3>Страница не прогрузилась...</h3>{% endblock %}                                           
+                    </div>
+                </div>  
+            </div>         
   </div>
   
   

@@ -1,3 +1,7 @@
+function PageFixing(){
+    let width = document.documentElement.clientWidth;
+    document.getElementById('wrapper').setAttribute('Style','width:'+width+'px;');
+}
 function load_сalculator(){
     let calculator = document.createElement('div');
     let inner_Calculator = document.createElement('div');
